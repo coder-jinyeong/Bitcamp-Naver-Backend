@@ -78,9 +78,7 @@ public class MemberDTO {
         this.phone2 = phone2;
     }
 
-    public int getHeight() {
-        return height;
-    }
+    public int getHeight() {return height;}
 
     public void setHeight(int height) {
         this.height = height;
