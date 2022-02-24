@@ -16,36 +16,52 @@
 
 package net.web.api.member.service;
 
-import net.web.api.member.domain.MemberDTO;
-
+import org.springframework.stereotype.Service;
+@Service
 public class MemberSerivceImpl implements MemberService{
+
     @Override
-    public String MembershopList(MemberDTO member) {
+    public String MembershipList() {
         return null;
     }
 
     @Override
-    public String MembershipInfo(MemberDTO member) {
+    public String MembershipInfo() {
         return null;
     }
 
     @Override
-    public String CheckMailingList(MemberDTO member) {
+    public String CheckMailingList() {
         return null;
     }
 
     @Override
-    public String RegisterSendMails(MemberDTO member) {
+    public String RegisterSendMails() {
         return null;
     }
 
     @Override
-    public String ReserveMoneyList(MemberDTO member) {
+    public String ReserveMoneyList() {
         return null;
     }
 
     @Override
-    public String CheckDetailSave(MemberDTO member) {
+    public String CheckDetailSave() {
+        return null;
+    }
+
+    @Override
+    public String calc() {
+        return null;
+    }
+
+    @Override
+    public String grade() {
+        return null;
+    }
+
+    @Override
+    public String bmi() {
         return null;
     }
 }

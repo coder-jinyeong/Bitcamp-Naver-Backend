@@ -16,5 +16,5 @@
 
 package net.web.api.member.repository;
 
-public class MemberRepositoryImpl {
+public class MemberRepositoryImpl implements MemberRepository{
 }

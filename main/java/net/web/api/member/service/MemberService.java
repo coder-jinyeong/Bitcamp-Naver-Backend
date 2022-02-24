@@ -16,13 +16,15 @@
 
 package net.web.api.member.service;
 
-import net.web.api.member.domain.MemberDTO;
 
 public interface MemberService {
-    String MembershopList(MemberDTO member); //회원목록
-    String MembershipInfo(MemberDTO member); //회원정보보기
-    String CheckMailingList(MemberDTO member); //발송목록보기
-    String RegisterSendMails(MemberDTO member); //메일발송등록
-    String ReserveMoneyList(MemberDTO member); //적립금목록
-    String CheckDetailSave(MemberDTO member); //적립금내역보기
+    String MembershipList(); //회원목록
+    String MembershipInfo(); //회원정보보기
+    String CheckMailingList(); //발송목록보기
+    String RegisterSendMails(); //메일발송등록
+    String ReserveMoneyList(); //적립금목록
+    String CheckDetailSave(); //적립금내역보기
+    String calc();
+    String grade();
+    String bmi();
 }
