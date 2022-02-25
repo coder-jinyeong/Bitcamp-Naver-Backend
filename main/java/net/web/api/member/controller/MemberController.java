@@ -18,9 +18,7 @@ package net.web.api.member.controller;
 
 
 import lombok.RequiredArgsConstructor;
-import net.web.api.member.domain.BmiDTO;
-import net.web.api.member.domain.CalcDTO;
-import net.web.api.member.domain.MemberDTO;
+import net.web.api.member.domain.*;
 import net.web.api.member.service.MemberService;
 import org.springframework.web.bind.annotation.*;
 
@@ -42,7 +40,13 @@ public class MemberController {
         return service.calc(calc);
     }
 
+    @PostMapping("/grade")
+    public String grade(@RequestBody GradeDTO grade){return service.grade(grade);}
 
+    @PostMapping("/login")
+    public String login(@RequestBody LoginDTO login) {return service.login(login);}
 
+    @PostMapping("/lotto")
+    public String lotto(@RequestBody LottoDTO lotto){return service.lotto(lotto);}
 
 }

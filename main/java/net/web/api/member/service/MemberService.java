@@ -17,12 +17,17 @@
 package net.web.api.member.service;
 
 
-import net.web.api.member.domain.BmiDTO;
-import net.web.api.member.domain.CalcDTO;
+import net.web.api.member.domain.*;
 
 public interface MemberService {
 
     String calc(CalcDTO calc);
 
     String bmi(BmiDTO bmi);
+
+    String grade(GradeDTO grade);
+
+    String login(LoginDTO login);
+
+    String lotto(LottoDTO lotto);
 }
