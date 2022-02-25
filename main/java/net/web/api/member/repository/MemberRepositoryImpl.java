@@ -16,5 +16,17 @@
 
 package net.web.api.member.repository;
 
+import net.web.api.member.domain.BmiDTO;
+import net.web.api.member.domain.CalcDTO;
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class MemberRepositoryImpl implements MemberRepository{
+    @Override
+    public String calc(CalcDTO calc) {
+        return null;
+    }
+
+    @Override
+    public String bmi(BmiDTO bmi) {return null;}
 }
